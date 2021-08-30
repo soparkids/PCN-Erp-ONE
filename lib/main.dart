@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 //import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart' show Firebase;
-import 'hymnlist.dart';
+import 'package:rchmain/screens/home.dart';
+//import 'screens/rch/hymnlist.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 
 void main() async {
@@ -65,6 +66,6 @@ void main() async {
         bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
       ),
     ),
-    home: RchApp(),
+    home: MyHomePage(),
   ));
 }

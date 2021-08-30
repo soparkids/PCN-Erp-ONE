@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:rchmain/hymndetail.dart';
+import 'hymndetail.dart';
 import 'hymnsearch.dart';
 //import 'package:firebase_core/firebase_core.dart' show Firebase;
 
@@ -35,7 +35,7 @@ class _RchAppState extends State<RchApp> {
               decoration: BoxDecoration(
                   color: Colors.white,
                   image: DecorationImage(
-                      image: AssetImage("assets/rchhymn.jpg"),
+                      image: AssetImage("assets/pcnlogo1.jpg"),
                       fit: BoxFit.cover)),
               child: Container(),
             ),
@@ -46,20 +46,60 @@ class _RchAppState extends State<RchApp> {
                   Navigator.pop(context);
                 }),
             ListTile(
-              title: Text("Favorites"),
-              leading: Icon(Icons.favorite),
+              title: Text("Moderator of General Assembly"),
+              leading: Icon(Icons.person),
               onTap: () {
                 Navigator.pop(context);
                 // _displayFavoritesPage(context);
               },
             ),
             ListTile(
-                title: Text("SSS Hymns"),
-                leading: Icon(Icons.book),
+                title: Text("PC of General Assembly"),
+                leading: Icon(Icons.person),
                 onTap: () {
                   Navigator.pop(context);
                   // _displayLanguagesPage(context);
                 }),
+                 ListTile(
+                title: Text("Hymnal"),
+                leading: Icon(Icons.menu_book),
+                onTap: () {
+                  Navigator.pop(context);
+                  // _displayLanguagesPage(context);
+                }),
+             ListTile(
+                title: Text("Bible"),
+                leading: Icon(Icons.auto_stories_rounded),
+                onTap: () {
+                  Navigator.pop(context);
+                  // _displayLanguagesPage(context);
+                }),
+                 ListTile(
+                title: Text("Practice & Procedure"),
+                leading: Icon(Icons.bookmark_add),
+                onTap: () {
+                  Navigator.pop(context);
+                  // _displayLanguagesPage(context);
+                }), 
+                 ListTile(
+                title: Text("The Blue Book"),
+                leading: Icon(Icons.bookmark_add),
+                onTap: () {
+                  Navigator.pop(context);
+                  // _displayLanguagesPage(context);
+                }),  ListTile(
+                title: Text("Approved Dates 2021"),
+                leading: Icon(Icons.calendar_today),
+                onTap: () {
+                  Navigator.pop(context);
+                  // _displayLanguagesPage(context);
+                }),  ListTile(
+                title: Text("Bible"),
+                leading: Icon(Icons.auto_stories_rounded),
+                onTap: () {
+                  Navigator.pop(context);
+                  // _displayLanguagesPage(context);
+                }),     
             ListTile(
               title: Text("Settings"),
               leading: Icon(Icons.settings),

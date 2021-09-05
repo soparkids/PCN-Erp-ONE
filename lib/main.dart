@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart' show Firebase;
-import 'package:rchmain/screens/home.dart';
+import 'package:pcn_erp/screens/home.dart';
 //import 'screens/rch/hymnlist.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 
